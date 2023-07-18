@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:driver_ride/global/global.dart';
 import 'package:driver_ride/pushNotification/push_notification_system.dart';
+import 'package:driver_ride/splashScreen/splash_screen.dart';
 import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -74,7 +75,7 @@ class _HomeTabPageState extends State<HomeTabPage> {
           onlineDriverData.car_color = (snap.snapshot.value as Map)["car_details"]["car_color"];
           onlineDriverData.car_type = (snap.snapshot.value as Map)["car_details"]["type"];
 
-          driverVehicleType = (snap.snapshot.value as Map)["car_details"]["car_type"];
+          driverVehicleType = (snap.snapshot.value as Map)["car_details"]["type"];
         }
     });
   }
@@ -174,7 +175,35 @@ class _HomeTabPageState extends State<HomeTabPage> {
               )
             ],
           ),
-        )
+        ),
+
+
+        Positioned(
+          top: 100,
+          left: 0,
+          right: 0,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ElevatedButton(
+                onPressed: (){
+                    firebaseAuth.signOut();
+                    Navigator.push(context, MaterialPageRoute(builder: (c) => SplashScreen()));
+                },
+                style: ElevatedButton.styleFrom(
+                    primary: buttonColor,
+                    padding: EdgeInsets.symmetric(horizontal: 18),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(26),
+                    )
+                ),
+                child: Text("Sign Out")
+              )
+            ],
+          ),
+        ),
+
+
 
       ],
     );
@@ -186,7 +215,7 @@ class _HomeTabPageState extends State<HomeTabPage> {
     Position pos = await Geolocator.getCurrentPosition(desiredAccuracy:  LocationAccuracy.high);
     driverCurrentPosition = pos;
 
-    //Geofire use firebase as datastorage to store location
+    //Geofire use firebase as dataStorage to store location
     Geofire.initialize("activeDrivers"); //make rule in realtimeDatabase
     Geofire.setLocation(currentUser!.uid, driverCurrentPosition!.latitude, driverCurrentPosition!.longitude);
 

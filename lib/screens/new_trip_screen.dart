@@ -9,7 +9,6 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 
 class NewTripScreen extends StatefulWidget {
   UserRideRequestInformation? userRideRequestDetails;
-
   NewTripScreen({this.userRideRequestDetails});
 
   @override

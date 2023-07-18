@@ -28,7 +28,7 @@ class _CarInfoScreenState extends State<CarInfoScreen> {
         "car_model": carModelTextEditingController.text.trim(),
         "car_number": carNumeberTextEditingController.text.trim(),
         "car_color": carColorTextEditingController.text.trim(),
-        // "type": selectedCarType!.trim(),    //added by me remove after
+        "type": selectedCarType!.trim(),    //added by me remove after
       };
 
       DatabaseReference userRef = FirebaseDatabase.instance.ref().child("drivers");

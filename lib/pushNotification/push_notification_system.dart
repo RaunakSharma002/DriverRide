@@ -89,7 +89,7 @@ class PushNotificationSystem {
         });
       }
       else{
-        Fluttertoast.showToast(msg: "This Ride Request has been cancled");
+        Fluttertoast.showToast(msg: "This Ride Request has been cancelled");
         Navigator.pop(context);
       }
     });

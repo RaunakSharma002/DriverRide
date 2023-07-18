@@ -9,7 +9,7 @@ import '../models/user_model.dart';
 final FirebaseAuth firebaseAuth = FirebaseAuth.instance;
 User? currentUser;
 
-StreamSubscription<Position>? streamSubscriptionPosition;//for real time driver location with help of Geolocator
+StreamSubscription<Position>? streamSubscriptionPosition;//for real time driver location with help of GeoLocator
 StreamSubscription<Position>? streamSubscriptionDriverLivePosition;
 
 AssetsAudioPlayer audioPlayer = AssetsAudioPlayer(); //for play notification music
