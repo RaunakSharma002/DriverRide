@@ -1,5 +1,6 @@
 import 'package:driver_ride/splashScreen/splash_screen.dart';
 import 'package:driver_ride/themeProvider/theme_provider.dart';
+import 'package:driver_ride/widgets/fare_amount_collection_dialog.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';

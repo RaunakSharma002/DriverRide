@@ -53,6 +53,8 @@ class _HomeTabPageState extends State<HomeTabPage> {
     newGoogleMapController!.animateCamera(CameraUpdate.newCameraPosition(cameraPosition));
 
     String humanReadableAddress = await AssistantMethods.searchAddressForGeographicCoOrdinates(driverCurrentPosition!, context);
+
+    AssistantMethods.readDriverRatings(context);
   }
 
   readCurrentDriverInformation() async{
@@ -70,6 +72,7 @@ class _HomeTabPageState extends State<HomeTabPage> {
           onlineDriverData.phone = (snap.snapshot.value as Map)["phone"];
           onlineDriverData.email = (snap.snapshot.value as Map)["email"];
           onlineDriverData.address = (snap.snapshot.value as Map)["address"];
+          onlineDriverData.ratings = (snap.snapshot.value as Map)["ratings"];
           onlineDriverData.car_model = (snap.snapshot.value as Map)["car_details"]["car_model"];
           onlineDriverData.car_number = (snap.snapshot.value as Map)["car_details"]["car_number"];
           onlineDriverData.car_color = (snap.snapshot.value as Map)["car_details"]["car_color"];
@@ -78,6 +81,8 @@ class _HomeTabPageState extends State<HomeTabPage> {
           driverVehicleType = (snap.snapshot.value as Map)["car_details"]["type"];
         }
     });
+
+    AssistantMethods.readDriverEarnings(context);
   }
 
   //read driver's information through database driver->uid and store in object onlineDriverData with help of readCurrentDriverInformation()
