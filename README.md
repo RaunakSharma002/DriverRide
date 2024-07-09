@@ -17,19 +17,19 @@ Driver App is a comprehensive mobile application designed for drivers, providing
 <table>
   <tr>
     <td style="text-align: center;">
-      <img src="https://github.com/yourusername/yourrepositoryname/blob/main/screenshots/login_page.jpg" alt="Login Page" width="200"/>
+      <img src="https://github.com/RaunakSharma002/DriverRide/blob/main/images/login.jpg" alt="Login Page" width="200"/>
       <p>Login Page</p>
     </td>
     <td style="text-align: center;">
-      <img src="https://github.com/yourusername/yourrepositoryname/blob/main/screenshots/home_page.jpg" alt="Home Page" width="200"/>
+      <img src="https://github.com/RaunakSharma002/DriverRide/blob/main/images/home.jpg" alt="Home Page" width="200"/>
       <p>Home Page</p>
     </td>
     <td style="text-align: center;">
-      <img src="https://github.com/yourusername/yourrepositoryname/blob/main/screenshots/rating_page.jpg" alt="Rating Page" width="200"/>
+      <img src="https://github.com/RaunakSharma002/DriverRide/blob/main/images/rating.jpg" alt="Rating Page" width="200"/>
       <p>Rating Page</p>
     </td>
     <td style="text-align: center;">
-      <img src="https://github.com/yourusername/yourrepositoryname/blob/main/screenshots/earnings_page.jpg" alt="Earnings Page" width="200"/>
+      <img src="https://github.com/RaunakSharma002/DriverRide/blob/main/images/earning.jpg" alt="Earnings Page" width="200"/>
       <p>Earnings Page</p>
     </td>
   </tr>
@@ -41,8 +41,8 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/driver_app.git
-    cd driver_app
+    git clone https://github.com/RaunakSharma/DriverRide.git
+    cd DriverRide
     ```
 
 2. **Install dependencies:**
@@ -81,7 +81,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-If you have any questions or feedback, feel free to reach out to me at your_email@example.com.
+If you have any questions or feedback, feel free to reach out to me at raunaksharma22345@gmail.com.
 
 ---
 
