@@ -17,10 +17,6 @@ Driver App is a comprehensive mobile application designed for drivers, providing
 <table>
   <tr>
     <td style="text-align: center;">
-      <img src="https://github.com/yourusername/yourrepositoryname/blob/main/screenshots/front_page.jpg" alt="Front Page" width="200"/>
-      <p>Front Page</p>
-    </td>
-    <td style="text-align: center;">
       <img src="https://github.com/yourusername/yourrepositoryname/blob/main/screenshots/login_page.jpg" alt="Login Page" width="200"/>
       <p>Login Page</p>
     </td>
